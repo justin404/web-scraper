@@ -254,11 +254,3 @@ CREATE TABLE sports.basketball_player_game_log (
 
 
 
-select *
-  from information_schema.tables
-  where table_schema = 'information_schema'
-  ;
-
-
-select *
-  from information_schema.innodb_datafiles;
