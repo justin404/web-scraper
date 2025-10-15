@@ -7,3 +7,4 @@ espn_nba_preseason_uri = "https://www.espn.com/nba/team/schedule/_/name/{abbrevi
 espn_nba_playin_uri = "https://www.espn.com/nba/team/schedule/_/name/{abbreviation}/season/{season_year}/seasontype/5"
 espn_nba_postseason_uri = "https://www.espn.com/nba/team/schedule/_/name/{abbreviation}/season/{season_year}/seasontype/3"
 
+espn_nba_box_score_uri = "https://www.espn.com/nba/boxscore/_/gameId/{game_id}"

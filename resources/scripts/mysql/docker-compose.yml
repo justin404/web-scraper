@@ -1,0 +1,19 @@
+# I've given up on fighting WSL with docker. The volume management across multi drives is just too annoying to try and deal with.
+
+services:
+  mysql:
+    image: mysql:8.0.42
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+    ports:
+      - "3306:3306"
+    volumes:
+      - "mysql_data:/var/lib/mysql"   # main datadir
+      - "tablespaces:/tablespaces"    # separate volume for tablespaces
+    command: ["--innodb_directories=/var/lib/mysql;/tablespaces"]   # This is optional, but should make things a little cleaner
+
+volumes:
+  mysql_data: {}
+  tablespaces: {}
+

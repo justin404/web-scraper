@@ -4,3 +4,4 @@ lxml
 mysql-connector-python==9.4.0
 jproperties
 jsonpath-ng
+sqlalchemy==2.0.44
